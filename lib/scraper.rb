@@ -1,11 +1,10 @@
-# rubocop: disable Security/Open
 class Scraper
   attr_accessor :url, :element, :product, :doc
   attr_writer :name
 
   def initialize(url)
     @url = url
-    @doc = Nokogiri::HTML(URI.open(@url))
+    @doc = Nokogiri::HTML(URI.parse(@url).open)
     @product = []
   end
 
@@ -28,4 +27,3 @@ class Scraper
     @product
   end
 end
-# rubocop: enable Security/Open
