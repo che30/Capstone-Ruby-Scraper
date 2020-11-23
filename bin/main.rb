@@ -32,7 +32,7 @@ if choice1 == 1
   $url = 'https://www.jumia.cm/en/mobile-phones?page'
   $url += choice2.to_s
   print "webpage #{choice2} has url "
-  puts $url
+  puts "\n#{$url}\n\n"
   scraper = Scraper.new($url)
   scraper.scrape
   display_scrape
@@ -44,8 +44,8 @@ else
   while count < choice2
     $url = 'https://www.jumia.cm/en/mobile-phones?page'
     $url += count.to_s
-    print "webpage #{count} has url "
-    puts $url
+    print "webpage #{count} has url \n\n"
+    puts "\n#{$url}\n\n"
     scraper = Scraper.new($url)
     scraper.scrape
     display_scrape
