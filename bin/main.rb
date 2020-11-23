@@ -28,6 +28,10 @@ end
 if choice1 == 1
   puts 'enter the page number'
   choice2 = gets.chomp.to_i
+  until choice2.positive? && choice2 < 9740
+    puts 'enter a number beteen 1...9740'
+    choice2 = gets.chomp.to_i
+  end
   $url = 'https://www.jumia.cm/en/mobile-phones?page='
   $url += choice2.to_s
   print "webpage #{choice2} has url "
@@ -39,6 +43,10 @@ if choice1 == 1
 else
   puts 'enter the maximum range'
   choice2 = gets.chomp.to_i
+  until choice2.positive? && choice2 < 9740
+    puts 'enter a number between 1...9740'
+    choice2 = gets.chomp.to_i
+  end
   count = 1
   while count <= choice2
     $url = 'https://www.jumia.cm/en/mobile-phones?page='
