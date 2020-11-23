@@ -41,6 +41,7 @@ else
   choice2 = gets.chomp.to_i
   count = 1
   while count < choice2
+    # puts the url
     $url = 'https://www.jumia.cm/en/mobile-phones?page'
     $url += count.to_s
     print "webpage #{count} has url \n\n"
