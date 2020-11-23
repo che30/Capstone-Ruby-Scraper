@@ -7,8 +7,6 @@ class Scraper
     @product = []
   end
 
-  def unparse_page; end
-
   def scrape_block
     @doc.css('article.post-holder')
   end
