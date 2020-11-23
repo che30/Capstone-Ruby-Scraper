@@ -35,7 +35,7 @@ navigate to the bin folder and execute the command ./main.rb on the terminal to 
 ![screenshot](./assets/images/scraper.png)
 
 ## Project discription
-- [Live Demo Video Link](https://www.loom.com/share/90852da453634f67a78d91dd6c213525)
+- [Live Demo Video Link](https://www.loom.com/share/004fc8ef006b46aa852d19cb18b8ae34)
 
 ## Built With
 
