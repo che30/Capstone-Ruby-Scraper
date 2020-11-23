@@ -10,10 +10,10 @@ def display_scrape
   scraper = Scraper.new($url)
   scraper.scrape
   i = 0
-  while i < scraper.product_info.length
-    puts "phone brand  #{i} #{scraper.product_info[i].name}\n"
-    puts "phone price  #{scraper.product_info[i].price}"
-    puts "phone address #{scraper.product_info[i].address}\n\n"
+  while i < scraper.product.length
+    puts "phone brand  #{i} #{scraper.product[i].name}\n"
+    puts "phone price  #{scraper.product[i].price}"
+    puts "phone address #{scraper.product[i].address}\n\n"
     i += 1
   end
 end

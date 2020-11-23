@@ -1,6 +1,8 @@
+# rubocop:disable Security/Open
 class Scraper
   attr_accessor :url, :element, :product, :doc
   attr_writer :name
+
   def initialize(url)
     @url = url
     @doc = Nokogiri::HTML(URI.open(@url))
@@ -16,18 +18,14 @@ class Scraper
   end
 
   def scrape
-    i = 0
     scrape_block.map do |e|
       name = e.css('a.post-link').text.split.join('')
       address = e.css('span.address').text.split.join('').to_s
       price = e.css('span.price').text.split.join('')
       prod = Product.new(name, address, price)
       @product << prod
-      i += 1
     end
-  end
-
-  def product_info
     @product
-    end
+  end
 end
+# rubocop:enable Security/Open
