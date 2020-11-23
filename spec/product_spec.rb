@@ -1,5 +1,5 @@
 # spec/product_spec.rb
-require './bin/main'
+require_relative './bin/main'
 describe Product do
   describe '#initialize' do
     it 'verifies that product class gets instantiated' do

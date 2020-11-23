@@ -1,6 +1,6 @@
 class Scraper
-  attr_accessor :url, :element, :product, :doc
-  attr_writer :name
+  attr_reader :product
+  attr_writer :url, :doc
 
   def initialize(url)
     @url = url
@@ -10,10 +10,6 @@ class Scraper
 
   def scrape_block
     @doc.css('article.post-holder')
-  end
-
-  def scrape_block_elemet_total
-    @doc.css('article.post-holder').count
   end
 
   def scrape

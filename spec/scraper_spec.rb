@@ -21,14 +21,6 @@ describe Scraper do
       expect { scraper.scrape_block('1') }.to raise_error(ArgumentError)
     end
   end
-  describe '#scrape_block_elemet_total' do
-    it 'verifies if an integer is the retun type' do
-      expect(scraper.scrape_block_elemet_total).to be_a_kind_of(Integer)
-    end
-    it 'verifies if the function does not return nil' do
-      expect(scraper.scrape_block_elemet_total).not_to eql(nil)
-    end
-  end
   describe '#scrape' do
     it 'verifies if scrape block returns an array' do
       expect(scraper.scrape).to an_instance_of(Array)

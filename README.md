@@ -20,7 +20,7 @@ To get a local copy up and running follow these simple example steps.
 -For all platforms, you must have a git set up locally
 # Installation
 - If you are in windows you can download or clone the repository.
-- If u are in Linux, mac os, etc clone the repository by typing git clone git@github.com:che30/Capstone-Build-your-own-scraper-in-ruby.git
+- If u are in Linux, Mac os, etc clone the repository by typing git clone git@github.com:che30/Capstone-Build-your-own-scraper-in-ruby.git
 
 # Running the scraper
 Open the terminal and install bundler by typing the command gem install bundler on the terminal. After installing bundler, navigate(change directory) to the folder containing the files you've cloned and typed the command bundle install on the terminal to install the necessary gems to run the scraper.
