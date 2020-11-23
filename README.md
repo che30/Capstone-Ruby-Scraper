@@ -34,6 +34,9 @@ Mac and Linux
 navigate to the bin folder and execute the command ./main.rb on the terminal to have the scraper running
 ![screenshot](./assets/images/scraper.png)
 
+## Project discription
+- [Live Demo Video Link](https://www.loom.com/share/90852da453634f67a78d91dd6c213525)
+
 ## Built With
 
 - Ruby,
