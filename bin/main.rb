@@ -28,7 +28,7 @@ end
 if choice1 == 1
   puts 'enter the page number'
   choice2 = gets.chomp.to_i
-  $url = 'https://www.jumia.cm/en/mobile-phones?page'
+  $url = 'https://www.jumia.cm/en/mobile-phones?page='
   $url += choice2.to_s
   print "webpage #{choice2} has url "
   puts "\n#{$url}\n\n"
@@ -40,9 +40,8 @@ else
   puts 'enter the maximum range'
   choice2 = gets.chomp.to_i
   count = 1
-  while count < choice2
-    # puts the url
-    $url = 'https://www.jumia.cm/en/mobile-phones?page'
+  while count <= choice2
+    $url = 'https://www.jumia.cm/en/mobile-phones?page='
     $url += count.to_s
     print "webpage #{count} has url \n\n"
     puts "\n#{$url}\n\n"
