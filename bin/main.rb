@@ -2,7 +2,6 @@
 # rubocop: disable Style/GlobalVars
 require 'nokogiri'
 require 'open-uri'
-require 'byebug'
 require_relative '../lib/product'
 require_relative '../lib/scraper'
 

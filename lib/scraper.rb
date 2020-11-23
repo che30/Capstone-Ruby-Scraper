@@ -1,4 +1,4 @@
-# rubocop:disable Security/Open
+# rubocop: disable Security/Open
 class Scraper
   attr_accessor :url, :element, :product, :doc
   attr_writer :name
@@ -28,4 +28,4 @@ class Scraper
     @product
   end
 end
-# rubocop:enable Security/Open
+# rubocop: enable Security/Open
